@@ -1,0 +1,86 @@
+$ancho:350px;
+$color: white;
+$fuente:#A2D9CE;
+@mixin size($width,$height) {
+height:$height;
+width: $width;
+}
+
+
+
+
+body {
+  background-image: linear-gradient(to bottom, #A2D9CE, white);
+  font-size: 75%; }
+
+#titulo{position: relative; 
+  top: 110px;
+   font-weight: 600; 
+   font-family: 'Cuprum', sans-serif; 
+   color: #0A0E67; 
+   text-align: center;
+}
+.navbar {font-size: 150%}
+.navbar-brand {font-size: 125%}
+section {flex-flow: center; 
+  margin-left: 250px; 
+  margin-right: 250px; 
+  margin-bottom: 35px; 
+  margin-top: 35px}
+
+.parrafo1 {text-align: center; width: $ancho+100;}
+
+.parrafo1--corto{background-color: white;}
+
+
+h2 h3 h4 {font-family: 'Cuprum', sans-serif; color: #0A0E67;}
+
+
+@keyframes aparecer {0%{opacity: 0;} 100% {opacity: 1;}}
+
+.carousel--living {
+  @include size(600px, 400px);
+  background-color: $color;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.galeria1{
+  display: flex-auto;
+@include size (600px, 400px);
+margin-bottom: 50px;
+}
+
+.container--tarjeta {background-color: white;}
+
+p {font-size: 140%; font-family: 'Cuprum', sans-serif; color: #0A0E67;}
+
+.formulario--datos {font-size: 150%;}
+.primercasa--si {font-family: 'Cuprum', sans-serif; color: #0A0E67;}
+.legales--si {font-size: 50%;}
+footer {
+margin-left: 50px;}
+.Pie--galeria {animation-duration: 3s; animation-name: aparecer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
